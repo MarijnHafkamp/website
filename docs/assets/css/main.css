@@ -1,0 +1,478 @@
+/* ================================================ */
+/* ACADEMIC WEBSITE STYLES - MOVEMENT SCIENCE THEME */
+/* ================================================ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #2c3e50;
+	background: #f8f9fa;
+}
+
+/* ================================================ */
+/* SIDEBAR HEADER */
+/* ================================================ */
+
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100vh;
+	background: #ffffff;
+	border-right: 1px solid #e9ecef;
+	padding: 2rem;
+	text-align: center;
+	box-shadow: 0 0 20px rgba(0,0,0,0.08);
+	z-index: 1000;
+	overflow-y: auto;
+}
+
+/* Profile Photo */
+.image.avatar {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto 1.5rem;
+	overflow: hidden;
+	border: 3px solid #495057;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.image.avatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Name/Title */
+#logo a {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #2c3e50;
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+	display: block;
+}
+
+#header p {
+	color: #6c757d;
+	font-style: normal;
+	margin-bottom: 2rem;
+}
+
+/* Navigation */
+#nav ul {
+	list-style: none;
+	margin-bottom: 2rem;
+}
+
+#nav li {
+	margin-bottom: 0.5rem;
+}
+
+#nav a {
+	display: block;
+	padding: 0.8rem 1rem;
+	color: #2c3e50;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: all 0.2s ease;
+	font-weight: 500;
+}
+
+#nav a:hover,
+#nav a.active {
+	background: #495057;
+	color: white;
+}
+
+/* Social Icons */
+.icons {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.icons a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #495057;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 4px;
+	transition: all 0.2s ease;
+	text-decoration: none;
+}
+
+.icons a:hover {
+	background: #2c3e50;
+}
+
+/* ================================================ */
+/* MAIN CONTENT AREA */
+/* ================================================ */
+
+#wrapper {
+	margin-left: 300px;
+	min-height: 100vh;
+}
+
+#main {
+	background: #ffffff;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+section {
+	padding: 4rem 0;
+	border-bottom: 1px solid #e9ecef;
+}
+
+section:last-child {
+	border-bottom: none;
+}
+
+/* Hero Banner */
+.image.main {
+	width: 100%;
+	height: 300px;
+	background: linear-gradient(135deg, #495057 0%, #2c3e50 100%);
+	margin-bottom: 2rem;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* ================================================ */
+/* TYPOGRAPHY */
+/* ================================================ */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	color: #2c3e50;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	color: #2c3e50;
+}
+
+h3 {
+	font-size: 1.8rem;
+	color: #495057;
+}
+
+h4 {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+p {
+	margin-bottom: 1.5rem;
+	line-height: 1.8;
+}
+
+/* ================================================ */
+/* ABOUT SECTION STYLES */
+/* ================================================ */
+
+.current-position {
+	background: #f8f9fa;
+	padding: 1.5rem;
+	border-radius: 4px;
+	border-left: 4px solid #495057;
+	margin-top: 2rem;
+}
+
+/* ================================================ */
+/* RESEARCH SECTION STYLES */
+/* ================================================ */
+
+.research-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+	margin: 2rem 0;
+}
+
+.research-item {
+	background: #f8f9fa;
+	padding: 2rem;
+	border-radius: 4px;
+	border: 1px solid #e9ecef;
+	transition: all 0.2s ease;
+	text-align: center;
+}
+
+.research-item:hover {
+	border-color: #495057;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.research-icon {
+	width: 60px;
+	height: 60px;
+	background: #495057;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1rem;
+	color: white;
+	font-size: 1.5rem;
+}
+
+/* ================================================ */
+/* PUBLICATIONS SECTION STYLES */
+/* ================================================ */
+
+.publication-item {
+	background: #f8f9fa;
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-radius: 4px;
+	border-left: 4px solid #495057;
+	transition: all 0.2s ease;
+}
+
+.publication-item:hover {
+	background: #e9ecef;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pub-title {
+	font-weight: 600;
+	color: #2c3e50;
+	margin-bottom: 0.5rem;
+	font-size: 1.1rem;
+}
+
+.pub-authors {
+	color: #495057;
+	margin-bottom: 0.3rem;
+}
+
+.pub-journal {
+	font-style: italic;
+	color: #7f8c8d;
+	margin-bottom: 0.5rem;
+}
+
+.pub-links a {
+	display: inline-block;
+	background: #495057;
+	color: white;
+	padding: 0.3rem 0.8rem;
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: 0.9rem;
+	margin-right: 0.5rem;
+	transition: all 0.2s ease;
+}
+
+.pub-links a:hover {
+	background: #2c3e50;
+}
+
+/* ================================================ */
+/* TEACHING SECTION STYLES */
+/* ================================================ */
+
+.teaching-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	margin: 2rem 0;
+}
+
+.course-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.course-list li {
+	padding: 0.5rem;
+	background: #f8f9fa;
+	margin-bottom: 0.5rem;
+	border-radius: 4px;
+	border-left: 3px solid #495057;
+}
+
+.simple-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.simple-list li {
+	margin-bottom: 0.3rem;
+}
+
+.note {
+	margin-top: 1rem;
+	font-size: 0.95rem;
+}
+
+/* ================================================ */
+/* CONTACT SECTION STYLES */
+/* ================================================ */
+
+.contact-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 3rem;
+}
+
+/* Contact form styles */
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	color: #2c3e50;
+}
+
+input, textarea, select {
+	width: 100%;
+	padding: 0.8rem;
+	border: 2px solid #e0e6ed;
+	border-radius: 8px;
+	font-size: 1rem;
+	transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: none;
+	border-color: #495057;
+	box-shadow: 0 0 0 3px rgba(73, 80, 87, 0.1);
+}
+
+/* ================================================ */
+/* BUTTONS */
+/* ================================================ */
+
+.btn {
+	background: #495057;
+	color: white;
+	padding: 0.8rem 2rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 500;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.btn:hover {
+	background: #2c3e50;
+}
+
+/* ================================================ */
+/* UTILITY CLASSES */
+/* ================================================ */
+
+.center-text {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+/* ================================================ */
+/* FOOTER */
+/* ================================================ */
+
+#footer {
+	background: rgba(44, 62, 80, 0.95);
+	color: white;
+	text-align: center;
+	padding: 2rem;
+}
+
+.copyright {
+	list-style: none;
+}
+
+.copyright li {
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+.copyright a {
+	color: #495057;
+	text-decoration: none;
+}
+
+/* ================================================ */
+/* RESPONSIVE DESIGN */
+/* ================================================ */
+
+@media screen and (max-width: 1024px) {
+	#header {
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 1rem;
+	}
+	
+	#wrapper {
+		margin-left: 0;
+	}
+	
+	.research-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.teaching-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.contact-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 1rem;
+	}
+	
+	section {
+		padding: 2rem 0;
+	}
+	
+	h2 {
+		font-size: 2rem;
+	}
+	
+	h3 {
+		font-size: 1.5rem;
+	}
+	
+	.image.main {
+		height: 200px;
+	}
+}
